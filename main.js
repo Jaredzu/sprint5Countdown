@@ -6,27 +6,26 @@ let hourOutput = document.querySelector("#hour")
 let minuteOutput = document.querySelector("#minute")
 let secondsOutput = document.querySelector("#seconds")
 
-const actualDate = new Date()
-console.log(`El día de hoy: ${actualDate}`)
-
-const finalDate = new Date('Jan 01 2023')
+const finalDate = new Date('Dec 31 2023 23:59:59')
 console.log(`Fecha final: ${finalDate}`)
 
-const updateCountDown = () => {
-    const remainTime = finalDate - actualDate;
+const updateCountDown = (time) => {
+    let month = Math.floor(time / 1000 / 60 / 60 / 24 / 30)
+    let day = Math.floor(time / 1000 / 60 / 60 / 24) % 30
+    let hour = Math.floor(time / 1000 / 60 / 60) % 24
+    let minute = Math.floor(time / 1000 / 60) % 60
+    let seconds = Math.floor(time / 1000) % 60
 
-    let day = Math.floor(remainTime / 1000 / 60 / 60 / 24)
-    let hour = Math.floor(remainTime / 1000 / 60 / 60) % 24
-    let minute = Math.floor(remainTime / 1000 / 60) % 60
-    let seconds = Math.floor(remainTime / 1000) % 60
-
-    dayOutput.innerHTML = day
-    hourOutput.innerHTML = hour
-    minuteOutput.innerHTML = minute
-    secondsOutput.innerHTML = seconds
+    monthOutput.innerHTML = month < 10 ? `0${month}` : month;
+    dayOutput.innerHTML = day < 10 ? `0${day}` : day;
+    hourOutput.innerHTML = hour < 10 ? `0${hour}` : hour;
+    minuteOutput.innerHTML = minute < 10 ? `0${minute}` : minute;
+    secondsOutput.innerHTML = seconds < 10 ? `0${seconds}` : seconds;
 
 }
-updateCountDown()
 
-/* setInterval(updateCountDown, 1000);
- */
+setInterval(() => {
+    const actualDate = new Date()
+    const remainTime = finalDate - actualDate;
+    updateCountDown(remainTime)
+}, 1000);
