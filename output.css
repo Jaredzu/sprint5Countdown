@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap");
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background-color: rgb(33, 29, 43);
+  background-image: url(https://raw.githubusercontent.com/aUnicornDev/launch-countdown-timer-main/2cd947eac6e79b94080017167f4df2d3096b4e6e/images/bg-stars.svg);
+}
+body main {
+  margin-top: 10rem;
+}
+body main #title {
+  color: white;
+  margin-bottom: 5rem;
+}
+body main .card-name {
+  color: #8486a9;
+}
+body main .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  font-weight: bolder;
+  color: rgb(251, 96, 135);
+  background-color: rgb(52, 54, 80);
+  border-radius: 10px;
+  box-shadow: -1px 11px 8px -6px rgba(0, 0, 0, 0.75);
+  width: 145px;
+}
+body #social-media {
+  position: absolute;
+  right: 45%;
+  bottom: 1rem;
+  z-index: 1;
+}
+body .social-logos:hover {
+  cursor: pointer;
+}
+body .social-logos {
+  margin: 1rem;
+}
+body #mountains {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=output.css.map */

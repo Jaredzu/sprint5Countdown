@@ -33,10 +33,14 @@ main {
 }
 
 #social-media {
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
+    position: absolute;
+    right: 45%;
+    bottom: 1rem;
+    z-index: 1;
+}
 
+.social-logos:hover {
+    cursor: pointer;
 }
 
 .social-logos {
@@ -47,4 +51,5 @@ main {
     width: 100%;
     position: absolute;
     bottom: 0px;
+    z-index: 0;
 }
