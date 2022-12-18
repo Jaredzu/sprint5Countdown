@@ -1,5 +1,6 @@
 console.log("Hello Countdown💜")
 
+import "./style.sass";
 import { updateCountDown } from "./countDown.js";
 
 const finalDate = new Date('Dec 31 2023 23:59:59')
