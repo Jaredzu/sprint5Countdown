@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cold-briu/webpack_local.git"
+    "url": "git+https://github.com/Jaredzu/sprint5Countdown.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cold-briu/webpack_local/issues"
+    "url": "https://github.com/Jaredzu/sprint5Countdown/issues"
   },
-  "homepage": "https://github.com/cold-briu/webpack_local#readme",
+  "homepage": "https://github.com/Jaredzu/sprint5Countdown#readme",
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
